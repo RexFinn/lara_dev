@@ -1,0 +1,40 @@
+meta {
+  name: t
+  type: http
+  seq: 2
+}
+
+get {
+  url: 12345?123=123
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  123: 123
+}
+
+headers {
+  123: 123
+}
+
+body:multipart-form {
+  123: 123 @contentType(123)
+}
+
+vars:pre-request {
+  123: 123
+}
+
+script:pre-request {
+  23
+}
+
+script:post-response {
+  321
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
